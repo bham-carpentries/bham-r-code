@@ -2,7 +2,7 @@
 
 #vectors
 A <- c(1:3,67,23:9)
-B <- c("aaf","f",LETTERS[4:5])
+B <- c("aaf","f",LETTERS[4:5],tolower(LETTERS[20:21]))
 
 #Matrix
 C <- matrix (nrow=5, ncol=3, data=0)
@@ -50,6 +50,12 @@ A[c(1,3,4)]
 C[1:2,2:3]
 
 E[1:2, 2:3]
+
+E[E$column2 %in% "a",]
+E[E$column2=="a", ]
+E[E$column2!="a", ]
+
+E[E$column2!="a" & E$column1==4, ]
 
 E$column1
 

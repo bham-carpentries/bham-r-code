@@ -44,4 +44,18 @@ nrow (D)
 nrow (E)
 nrow (G)
 
+#Indexing
+A[c(1,3,4)]
+
+C[1:2,2:3]
+
+E[1:2, 2:3]
+
+E$column1
+
+G$column1
+G[[1]]
+
+## Reading data files
+gapminder <- read.csv(file="data/gapminder-FiveYearData.csv")
 
